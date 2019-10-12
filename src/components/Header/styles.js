@@ -1,10 +1,14 @@
 import styled from '@emotion/styled';
 import { Navbar } from 'rbx';
 
+const NavBarWrapper = styled.div`
+  position: relative;
+`;
+
 const CustomNavBar = styled(Navbar)`
   background-color: ${props => props.backgroundColor};
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
-  min-height: 60px;
+  min-height: 53px;
 `;
 
 const NotificationCount = styled.div`
@@ -24,4 +28,12 @@ const NotificationCount = styled.div`
   top: -3px;
 `;
 
-export { CustomNavBar, NotificationCount };
+const ContentWrapper = styled.div`
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
+`;
+
+export { CustomNavBar, NotificationCount, NavBarWrapper, ContentWrapper };

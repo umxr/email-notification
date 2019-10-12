@@ -14,12 +14,6 @@ function App() {
             margin: 0 !important;
             min-height: inherit;
           }
-          .flex-div {
-            display: flex;
-            height: 100%;
-            align-items: center;
-            justify-content: center;
-          }
         `}
       />
       <Header />
