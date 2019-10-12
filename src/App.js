@@ -12,6 +12,7 @@ function App() {
         styles={css`
           .columns {
             margin: 0 !important;
+            min-height: inherit;
           }
           .flex-div {
             display: flex;
