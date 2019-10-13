@@ -42,7 +42,9 @@ const Header = () => {
                 onClick={() => showNotification(!notification)}
               >
                 <Email size={18} height={23} width={20} fill="#fff" />
-                <NotificationCount>1</NotificationCount>
+                {Object.values(cookie).length === 0 && (
+                  <NotificationCount>1</NotificationCount>
+                )}
               </IconWrapper>
             </ContentWrapper>
           </Column>
