@@ -1,4 +1,5 @@
 import React from 'react';
+import { CookiesProvider } from 'react-cookie';
 import { Global, css } from '@emotion/core';
 
 import Header from './components/Header';
@@ -16,7 +17,9 @@ function App() {
           }
         `}
       />
-      <Header />
+      <CookiesProvider>
+        <Header />
+      </CookiesProvider>
     </>
   );
 }

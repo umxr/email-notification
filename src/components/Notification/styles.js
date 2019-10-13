@@ -41,9 +41,12 @@ const Gradient = styled.div`
   background: linear-gradient(180deg, #1e507d 0%, #62cdd4 100%);
 `;
 
-const Form = styled.form`
+const FormWrapper = styled.div`
   padding: 30px 45px;
   background: linear-gradient(180deg, #edddce 0%, #f4ece2 100%);
+`;
+
+const Form = styled.form`
   @media screen and (max-width: 768px) {
     .email-column {
       order: 1;
@@ -100,7 +103,7 @@ const CheckboxContainer = styled.div`
   label {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     font-size: 10px;
     color: #999;
   }
@@ -112,12 +115,21 @@ const CheckboxContainer = styled.div`
   }
 `;
 
+const ErrorMessage = styled.p`
+  color: red;
+  font-size: 12px;
+  line-height: 14px;
+  margin-top: 10px;
+`;
+
 export {
   NotificationWrapper,
   Content,
   Gradient,
+  FormWrapper,
   Form,
   Button,
   Input,
   CheckboxContainer,
+  ErrorMessage,
 };
